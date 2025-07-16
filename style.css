@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-weight: bold;
+}
+
+.gradient-background {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    107deg,
+    #7bbba8,
+    #d28129,
+    #5ca85f,
+    #78946f,
+    #51c0ba,
+    #f4107c
+  );
+  background-size: 360% 360%;
+  animation: gradient-animation 60s ease infinite;
+}
+
+.container {
+  border: 5px solid black;
+  padding: 20px;
+  height: 500px;
+  width: 320px;
+  border-radius: 20px;
+  background-color: gray;
+}
+
+.input-container {
+  margin: 50px 0;
+  height: 50px;
+}
+
+.display {
+  border: 1px solid black;
+  height: 64px;
+  padding: 14px;
+  font-family: "IBM Plex Mono", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  background-color: lightgray;
+}
+
+.clear-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 25px;
+}
+
+.clear-container > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+#btn-ac {
+  background-color: maroon;
+  color: white;
+}
+
+.btn-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.btn-container > button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.btn-operator {
+  background-color: yellow;
+}
+
+.btn-equals {
+  background-color: skyblue;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
